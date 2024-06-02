@@ -15,7 +15,7 @@ while True:
         for dtc in output.detections:
             draw.draw_detection(frame, dtc)
             
-    cv2.imshow("Face DEtection", frame)
+    cv2.imshow("Face Detection", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
