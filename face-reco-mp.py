@@ -14,6 +14,7 @@ while True:
     if output.detections:
         for dtc in output.detections:
             draw.draw_detection(frame, dtc)
+            winsound.Beep(5000, 500)
             
     cv2.imshow("Face Detection", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
